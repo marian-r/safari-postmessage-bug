@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Top</title>
+</head>
+<body>
+
+<h1>TOP</h1>
+
+<script>
+  window.addEventListener('message', function(e) {
+    console.log(e.data);
+    console.log('event.source', e.source.location.href);
+  });
+</script>
+
+<iframe src="child.html"></iframe>
+
+</body>
+</html>
